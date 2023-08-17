@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: 'burtons',
+        syne: 'syne',
       },
       colors: {
         'backgroundBlue': '#A6B0E2',
