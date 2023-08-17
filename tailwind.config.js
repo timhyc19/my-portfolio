@@ -13,8 +13,27 @@ module.exports = {
     extend: {
       fontFamily: {
         burtons: 'burtons',
+      },
+      colors: {
+        'backgroundBlue': '#A6B0E2',
+        'fadeBlue': '#b1bafa',
+        'backgroundTry': '#EFF3F6',
+      },
+      animation: {
+        fadeIn: "fadeIn 2s ease-in forwards"
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 }
+        }
+      },
+      variants: {
+        animation: ["motion-safe"]
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
