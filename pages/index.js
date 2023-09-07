@@ -69,7 +69,7 @@ export default function Home() {
 
           <div className="flex items-center justify-center md:justify-start">
             <div className="">
-              <h2 className="animate-fade-right animate-delay-150  font-sans max-w-xl text-5xl py-10 font-medium md:text-7xl mt-20">Hello, I'm Tim<br /></h2>
+              <h2 className="animate-fade-right animate-delay-150  font-sans max-w-xl text-5xl py-10 font-medium md:text-7xl mt-20">Hello, I&apos;m Tim<br /></h2>
               <h3 className="text-2xl animate-fade-right animate-delay-150 font-sans max-w-2xl md:text-3xl">A Computer Science Student at the University of Waterloo, passionate about <strong>software and data</strong>.</h3>
               <div className="">
               </div>
