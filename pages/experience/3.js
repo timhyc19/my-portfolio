@@ -15,13 +15,13 @@ const WorkExperience3 = () => {
             <div className="max-w-4xl"> {/* Limit the width here */}
             <p className="text-xl">
             During my role, I had the privilege of spearheading a groundbreaking initiative in the realm 
-            of machine learning, which significantly contributed to our project's success.
+            of machine learning, which significantly contributed to our project&apos;s success.
             </p>
 
               <p className="text-xl mt-10">
               A standout achievement was leading the inception of a novel machine learning model for project cost forecasting. 
               Leveraging Python libraries such as <strong>Scikit-learn</strong> (Sklearn) and <strong>Pandas</strong>, along with <strong>AutoML</strong>
-              tools, I developed a sophisticated predictive model that surpassed our client's expectations. This innovative approach 
+              tools, I developed a sophisticated predictive model that surpassed our client&apos;s expectations. This innovative approach 
               led to a remarkable improvement, enhancing the accuracy of existing client predictions by 6%. This achievement 
               underscored my proficiency in machine learning techniques and my ability to deliver tangible value to our clients.
               </p>

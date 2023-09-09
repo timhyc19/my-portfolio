@@ -13,7 +13,7 @@ const WorkExperience1 = () => {
         <h2 className="mt-10 text-xl">Summary</h2>
         <div className="max-w-4xl"> {/* Limit the width here */}
           <p className="text-xl">
-            Currently interning on Cohere's data engineering team!
+            Currently interning on Cohere&apos;s data engineering team!
           </p>
         </div>
 
