@@ -16,7 +16,7 @@ const WorkExperience1 = () => {
             My initial work at ecobee was assisting with a new smart home doorbell camera.
             One of the products&apos; features was a push notification to the user&apos;s phone regarding any
             person, vehicle, and package detections. I contributed to the ML inference pipeline,
-            which reported F1-scores of different models&apos; results based on a "golden set" of
+            which reported F1-scores of different models&apos; results based on a &apos;golden set&apos; of
             video images. Apart from following <strong>SOLID</strong> software principles, I was exposed to 
             technologies such as <strong>Python Multithreading</strong>, <strong>Kubernetes</strong>, and <strong>Docker</strong>.
           </p>
