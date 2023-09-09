@@ -81,8 +81,8 @@ export default function Home() {
                 <ul className="mt-4">
                   {workExperience.map((experience, index) => (
                     <li key={index} className="mb-6">
-                      {/* <Link href={`/experience/${index}`}> */}
-                          <h4 className="text-xl font-medium animate-fade-right animate-delay-150">
+                      <Link href={`/experience/${index}`}>
+                          <h4 className="text-xl font-medium hover:scale-110 animate-fade-right animate-delay-150">
                             {experience.company}
                           </h4>
                           <p className="text-gray-600 animate-fade-right animate-delay-150">
@@ -91,7 +91,7 @@ export default function Home() {
                           <p className="mt-2 animate-fade-right animate-delay-150">
                             {experience.description}
                           </p>
-                      {/* </Link> */}
+                      </Link>
                     </li>
                   ))}
                 </ul>
