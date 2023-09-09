@@ -59,7 +59,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="transition ease-in-out delay-150 hover:scale-105 duration-300">
-                  <a className="animate-fade-right-left" href="https://drive.google.com/file/d/1dqPWt4EzM9_1sGd9NkXMFCi6WdZDNihE/view?usp=sharing" target="_blank">
+                  <a className="animate-fade-right-left" href="https://drive.google.com/file/d/188RcU2DgThVkBDYBl0eJcJKCTrPonzPY/view?usp=sharing" target="_blank">
                     Resume
                   </a>
                 </li>
