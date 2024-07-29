@@ -4,7 +4,7 @@ import TCLogo from '../public/TCLogo.png';
 import CohereLogo from '../public/coherelogo.png'; 
 import EcobeeLogo from '../public/ecobee_logo.jpeg'; 
 import BDOLogo from '../public/bdo.png'; 
-import NpxLogo from '../public/npx.png'; 
+import NpxLogo from '../public/npx.jpg'; 
 import transportCanadaLogo from '../public/transportcanada.webp'; 
 import { useState } from "react";
 import Link from 'next/link';
