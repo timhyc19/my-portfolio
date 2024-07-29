@@ -1,8 +1,13 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import TCLogo from '../public/TCLogo.png'
-import { useState } from "react"
-import Link from 'next/link'
+import TCLogo from '../public/TCLogo.png';
+import CohereLogo from '../public/coherelogo.png'; 
+import EcobeeLogo from '../public/ecobee_logo.jpeg'; 
+import BDOLogo from '../public/bdo.png'; 
+import NpxLogo from '../public/npx.png'; 
+import transportCanadaLogo from '../public/transportcanada.webp'; 
+import { useState } from "react";
+import Link from 'next/link';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -11,28 +16,33 @@ export default function Home() {
   const workExperience = [
     {
       company: "Cohere 📍",
-      role: "Software Engineer Intern | Fall 2023",
-      description: "Data infra and pipelines",
+      role: "Software Engineer Intern | Fall 2023 & Winter 2024",
+      description: "Data Infrastructure, Pipelines, Base Models",
+      logo: CohereLogo,
     },
     {
       company: "Ecobee",
       role: "Software Engineer Intern | Summer 2023",
-      description: "Data platforms",
+      description: "Data Platforms and Infrastructure",
+      logo: EcobeeLogo,
     },
     {
       company: "BDO",
       role: "Data Engineer Intern | Fall 2022",
       description: "Insurance Data Team",
+      logo: BDOLogo,
     },
     {
       company: "NPX",
       role: "Machine Learning Engineer Intern | Spring 2022",
       description: "Data and AI Team",
+      logo: NpxLogo,
     },
     {
       company: "Transport Canada",
       role: "Data Science Intern | Summer 2021",
       description: "Data and Analytics Division",
+      logo: transportCanadaLogo,
     },
   ];
 
@@ -59,7 +69,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li className="transition ease-in-out delay-150 hover:scale-105 duration-300">
-                  <a className="animate-fade-right-left" href="https://drive.google.com/file/d/188RcU2DgThVkBDYBl0eJcJKCTrPonzPY/view?usp=sharing" target="_blank">
+                  <a className="animate-fade-right-left" href="https://drive.google.com/file/d/1Y9icU-LDkktuOEqsZ3yoiKGgM_1XnURg/view?usp=drive_link" target="_blank">
                     Resume
                   </a>
                 </li>
@@ -69,8 +79,8 @@ export default function Home() {
 
           <div className="flex items-center justify-center md:justify-start">
             <div className="">
-              <h2 className="animate-fade-right animate-delay-150  font-sans max-w-xl text-5xl py-10 font-medium md:text-7xl mt-20">Hello, I&apos;m Tim<br /></h2>
-              <h3 className="text-2xl animate-fade-right animate-delay-150 font-sans max-w-2xl md:text-3xl">A Computer Science Student at the University of Waterloo, passionate about <strong>software and data</strong>.</h3>
+              <h2 className="animate-fade-right animate-delay-150  font-sans max-w-xl text-5xl py-0 font-medium md:text-7xl mt-20">Hello, I&apos;m Tim<br /></h2>
+              <h3 className="text-2xl animate-fade-right animate-delay-150 font-sans max-w-2xl md:text-3xl">A Computer Science Student at the University of Waterloo, passionate about <strong>machine learning and software engineering</strong>.</h3>
               <div className="">
               </div>
             </div>
@@ -80,18 +90,21 @@ export default function Home() {
                 <h3 className="text-3xl font-semibold animate-fade-right animate-delay-150">Work Experience</h3>
                 <ul className="mt-4">
                   {workExperience.map((experience, index) => (
-                    <li key={index} className="mb-6">
-                      <Link href={`/experience/${index}`}>
-                          <h4 className="text-xl font-medium hover:scale-110 animate-fade-right animate-delay-150">
-                            {experience.company}
-                          </h4>
-                          <p className="text-gray-600 animate-fade-right animate-delay-150">
-                            {experience.role}
-                          </p>
-                          <p className="mt-2 animate-fade-right animate-delay-150">
-                            {experience.description}
-                          </p>
-                      </Link>
+                    <li key={index} className="mb-6 flex items-center animate-fade-right animate-delay-150">
+                      {experience.logo && (
+                        <Image src={experience.logo} alt={`${experience.company} logo`} width={50} height={50} className="mr-4" />
+                      )}
+                      <div>
+                        <h4 className="text-xl font-medium hover:scale-110 animate-fade-right animate-delay-150">
+                          {experience.company}
+                        </h4>
+                        <p className="text-gray-600 animate-fade-right animate-delay-150">
+                          {experience.role}
+                        </p>
+                        <p className="mt-2 animate-fade-right animate-delay-150">
+                          {experience.description}
+                        </p>
+                      </div>
                     </li>
                   ))}
                 </ul>
