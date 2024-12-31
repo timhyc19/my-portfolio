@@ -83,6 +83,9 @@ export default function Home() {
               <li className="transition hover:scale-105 duration-300">
                 <a href="https://github.com/timhyc19" target="_blank">Github</a>
               </li>
+              <li className="transition hover:scale-105 duration-300">
+                <a href="/blog" target="_self">Blog</a>
+              </li>
             </ul>
           </div>
 
