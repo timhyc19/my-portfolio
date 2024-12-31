@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
 import TCLogo from '../public/TCLogo.png';
 import { useState } from "react";
 
@@ -78,13 +79,13 @@ export default function Home() {
             <h1 className="text-xl mt-8 ml-5">Tim Chung</h1>
             <ul className="flex ml-auto items-center gap-6 text-xl mt-8">
               <li className="transition hover:scale-105 duration-300">
-                <a href="https://www.linkedin.com/in/tim-chung/" target="_blank">Linkedin</a>
+                <a href="https://www.linkedin.com/in/tim-chung/" target="_blank" rel="noopener noreferrer">Linkedin</a>
               </li>
               <li className="transition hover:scale-105 duration-300">
-                <a href="https://github.com/timhyc19" target="_blank">Github</a>
+                <a href="https://github.com/timhyc19" target="_blank" rel="noopener noreferrer">Github</a>
               </li>
               <li className="transition hover:scale-105 duration-300">
-                <a href="/blog" target="_self">Blog</a>
+                <Link href="/blog">Blog</Link>
               </li>
             </ul>
           </div>

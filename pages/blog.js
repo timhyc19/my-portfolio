@@ -9,7 +9,7 @@ export default function Blog({ posts }) {
       </Head>
       <main className="px-10 md:px-20 lg:px-40 py-12">
         <section className="text-center mb-12">
-          <h1 className="text-5xl font-semibold mb-4">Tim's Blog</h1>
+          <h1 className="text-5xl font-semibold mb-4">Tim&apos;s Blog</h1>
           <p className="text-gray-600 text-lg">
             Thoughts and experiences on software engineering, machine learning, and beyond.
           </p>
