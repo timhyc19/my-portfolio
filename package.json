@@ -20,6 +20,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.10.1",
     "remark": "^15.0.1",
+    "remark-figure-caption": "^1.0.6",
     "remark-html": "^16.0.1",
     "taos": "^1.0.5"
   },
